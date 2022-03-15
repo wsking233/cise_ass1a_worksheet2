@@ -4,11 +4,11 @@ const articles = require("./dummydata/articles");
 
 const server = express();
 
-server.get('./', (req,res)=>{
+server.get('/', (req,res)=>{
     res.send("API is running")
 });
 
-server.get('./api/articles', (req,res)=>{
+server.get('/api/articles', (req,res)=>{
     res.json(articles)
 });
 
